@@ -11,6 +11,7 @@ public class Panagram {
 		char[] ch1=s1.toCharArray();
 		TreeSet h=new TreeSet();
 		for (int i = 0; i < ch1.length; i++)
+			
 		{
 			h.add(ch1[i]);
 		}

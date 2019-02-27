@@ -2,6 +2,7 @@ package set;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class Hash {
 
@@ -18,13 +19,20 @@ public class Hash {
 		h.add(null);
 		h.add(null);
 	
-		Iterator i=h.iterator();
+		Iterator<Integer> i=h.iterator();
 		while(i.hasNext())
 		{
 			System.out.println(i.next());
 		}
 		System.out.println("done");
-	
+		
+		ListIterator<Integer> j=(ListIterator<Integer>) h.iterator();
+		while(i.hasNext())
+		{
+			System.out.println(i.next());
+		}
+		
+		
 		
 //		for(Integer k:h)
 //		{

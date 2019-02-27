@@ -11,8 +11,10 @@ h.put(101,"bob" );
 h.put(105,"jj" );	
 
 h.put(108,"bk" );	
+
+
 h.put(null,"bkk" );	
-h.put(null,"bkp" );	
+h.put(null,null );	
 
 for(Map.Entry m:h.entrySet())
 	{

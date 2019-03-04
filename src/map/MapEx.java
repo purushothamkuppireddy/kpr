@@ -2,7 +2,9 @@ package map;
 
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 public class MapEx {
@@ -24,8 +26,7 @@ public class MapEx {
 		HashMap<String,Integer> m1=new HashMap() ;
 
 		m1=m.disp("bob");
-		
-		
+		//m1=m.disp("singh");
 		for(Map.Entry me:m1.entrySet())
 		{
 			System.out.println(me.getKey()+"  "+me.getValue());

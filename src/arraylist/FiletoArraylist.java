@@ -1,3 +1,4 @@
+
 package arraylist;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -32,7 +33,6 @@ e.printStackTrace();
 		
 		
 		FileInputStream f=new FileInputStream("E:\\programjava\\arraylist.txt");
-		
 		int i;
 		while((i=f.read())!=-1)
 		{

@@ -13,8 +13,6 @@ public class Threaddemo extends Thread {
 	Threaddemo th=new Threaddemo();
 	th.start();    // implicitly calling run method
 	
-	
-	
 	//th.run();// also can be called directly
 	
 	}

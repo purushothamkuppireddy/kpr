@@ -37,44 +37,50 @@ public static void decryption(StringBuilder encmsg)
 
 }
 
-public static int geemessage
+//public static int getmessage()
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-//decryption(encryption("Hello-",3));
+
 		StringBuilder message=new StringBuilder();
 		try {
 			
 			
 			FileOutputStream f1 = new FileOutputStream("E:\\Programjava\\demo.txt");
-			System.out.println("Enetr integer");
-			//String n=sc.next();
+			System.out.println("Enetr key");
 			int n=sc.nextInt();
-			//byte[]b=n.getBytes();
 			f1.write(n);
 			f1.close();
 			
-			FileOutputStream f = new FileOutputStream("E:\\Programjava\\demo1.txt");
-			System.out.println("Enetr name");
-			String n=sc.next();
-			
-			
-			//int n=sc.nextInt();
-			byte[]b=n.getBytes();
-			f.write(b);
-			f.close();
+			FileOutputStream f2 = new FileOutputStream("E:\\Programjava\\demo1.txt");
+			System.out.println("Enetr message");
+			String s1=sc.next();
+			byte[]b=s1.getBytes();
+			f2.write(b);
+			f2.close();
 		
-			
-			
-			FileInputStream f1=new FileInputStream("E:\\programjava\\demo1.txt");
-			FileInputStream f2=new FileInputStream("E:\\programjava\\demo.txt");
-			
+			FileInputStream file1=new FileInputStream("E:\\programjava\\demo.txt");
+			FileInputStream file2=new FileInputStream("E:\\programjava\\demo1.txt");
+			StringBuilder str=new StringBuilder();
 			int i;
-			while((i=f1.read())!=-1)
+			while((i=file2.read())!=-1)
 			{
-				System.out.print((char)i);
-				encryption((char)i,f2.read());
+				//System.out.print((char)i);
+				
+				
+				str.append((char)i);
+				
 			}
+			String str2=str.toString();
+			System.out.println(str2);
+			
+			FileOutputStream f3= new FileOutputStream("E:\\Programjava\\encmsg.txt");
+			String s5;
+			s5=(encryption(str2,file1.read())).toString();
+			byte[]b1=s5.getBytes();
+			f3.write(b1);
+			f3.close();
+			
 			f1.close();
 			f2.close();		
 			}

@@ -20,10 +20,11 @@ public class Tree {
 		h.add(9);
 		h.add(80);
 		h.add(77);
+		//h.set(1,12);// no answer;
 		
 		
-		
-//		h.add(null);
+
+		//h.add(null);
 		//h.add(null);
 	
 		Iterator i=h.iterator();

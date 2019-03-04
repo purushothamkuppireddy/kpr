@@ -10,9 +10,9 @@ public class Filename {
 				try {
 					FileOutputStream f = new FileOutputStream("E:\\Programjava\\demo1.txt");
 			System.out.println("Enetr name");
-			String n=sc.next();
+			String s=sc.next();
 			//int n=sc.nextInt();
-			byte[]b=n.getBytes();
+			byte[]b=s.getBytes();
 			
 			f.write(b);
 			f.close();

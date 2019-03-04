@@ -13,7 +13,7 @@ public class Treemaap {
 
 		h.put(108,"bk" );	
 		//h.put(null,"bkk" );	
-		h.put(null,"bkp" );	
+		//h.put(null,"bkp" );	
 
 		for(Map.Entry m:h.entrySet())
 			{

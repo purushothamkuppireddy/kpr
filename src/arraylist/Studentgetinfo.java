@@ -25,13 +25,21 @@
 				
 				System.out.println(sa);
 				try {
-					FileOutputStream f=new FileOutputStream("E:\\Capg\\StuFile.txt");
-					ObjectOutputStream obj=new ObjectOutputStream(f);
+					FileOutputStream f=new FileOutputStream("E:\\Programjava\\StuFile.txt");
+				ObjectOutputStream obj=new ObjectOutputStream(f);
 					obj.writeObject(sa);
+					
+					FileInputStream f2=new FileInputStream("E:\\Programjava\\StuFile.txt");
+					ObjectInputStream out=new ObjectInputStream(f2);
+					ArrayList<Student> ua=(ArrayList<Student>)out.readObject();
+					System.out.println(ua.get(1).getName());
 				} catch (FileNotFoundException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (ClassNotFoundException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
@@ -46,4 +54,5 @@
 
 		}
 
-}
+
+		

@@ -14,6 +14,21 @@ public void run()
 		Thread thread= new Thread(th);
 		thread.start();
 		
+//		public static void main(String[] args) {
+//			
+//			
+//			Thread thread= new Thread(new Runnable() {
+//				public void run()
+//				{
+//					System.out.println("THread1 called");
+//				}
+//		
+//				
+//			});thread.start();
+//			
+//		
+		
+		
 		
 		
 		

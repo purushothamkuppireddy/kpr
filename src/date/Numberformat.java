@@ -9,7 +9,7 @@ public class Numberformat {
 	    NumberFormat f1 = NumberFormat.getInstance(Locale.ITALY); 
 	    NumberFormat f2 = NumberFormat.getInstance(Locale.UK); 
 	    NumberFormat f3 = NumberFormat.getInstance(Locale.ENGLISH); 
-	    
+	   
 	    
 	    System.out.println("ITALY representation of " + d + " : " + f1.format(d)); 
 	    System.out.println("UK representation of " + d + " : " + f2.format(d)); 

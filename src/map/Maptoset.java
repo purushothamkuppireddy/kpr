@@ -14,12 +14,13 @@ public class Maptoset {
 		//HashMap<String,Integer> h=new HashMap<>();
 	//	h.put("kpr",111 );	
 	// h.put("sri",112 );	
+		
 	
 		
-		HashSet<String> hashset=new HashSet<>(h.values());
+		HashSet<String> hashvalue=new HashSet<>(h.values());
+		System.out.println(hashvalue);
+		HashSet<Integer> hashset=new HashSet<Integer>(h.keySet());
 		System.out.println(hashset);
-		HashSet<Integer> hash=new HashSet<Integer>(h.keySet());
-		System.out.println(hash);
 		
 	
 	}

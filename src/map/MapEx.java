@@ -32,8 +32,8 @@ public class MapEx {
 			System.out.println(me.getKey()+"  "+me.getValue());
 		}
 	
-	System.out.println(m1.keySet());
-	System.out.println(m1.values());
+		System.out.println(m1.keySet());
+		System.out.println(m1.values());
 		
 		
 		//Collection<Integer> value=m1.values();
